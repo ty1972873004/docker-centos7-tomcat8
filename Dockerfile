@@ -17,7 +17,7 @@ RUN localedef -c -f UTF-8 -i zh_CN zh_CN.utf8
 #设置环境变量 
 ENV LC_ALL zh_CN.utf8 
 RUN echo "export LC_ALL=zh_CN.utf8" >> /etc/profile
-
+RUN yum clean all 
 
 ENV APACHE_TOMCAT_DOWNLOAD_URL http://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz
 ENV APACHE_TOMCAT_INSTALL_DIR /usr/local/apache-tomcat-8.5.23
