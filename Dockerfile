@@ -4,6 +4,7 @@ LABEL name="CentOS7 with Apache Tomcat 8"
 
 ENV APACHE_TOMCAT_DOWNLOAD_URL http://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz
 ENV APACHE_TOMCAT_INSTALL_DIR /usr/local/apache-tomcat-8.5.23
+ENV JAVA_OPTS -Dfile.encoding=utf-8
 
 RUN curl \
 	-L \
